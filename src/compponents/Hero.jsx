@@ -26,12 +26,12 @@ export const Hero = () => {
                         <label htmlFor='return-date'>Return Date</label>
                         <input type="date" id="return-date" className='text-sm text-gray-500' required />
                     </div>
-                    <button className='flex items-center justify-center gap-1 px-9 py-3 max-sm:mt-4 bg-primary hover:bg-primary-dull text-white rounded-full
-                    cursor-pointer'>
-                        <img src={assets.search_icon} alt='Search' className=''></img>
-                        Search
-                    </button>
                 </div>
+                <button className='flex items-center justify-center gap-1 px-9 py-3 max-sm:mt-4 bg-primary hover:bg-primary-dull text-white rounded-full
+                    cursor-pointer'>
+                    <img src={assets.search_icon} alt='Search' className=''></img>
+                    Search
+                </button>
             </form>
 
             <img src={assets.main_car} alt='car' className='max-h-74'></img>
