@@ -35,7 +35,12 @@ export const Testimonial = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-18">
 
                 {testimonials.map((testimonial, index) => (
-                    <div key={index} className="bg-white p-6 rounded-xl shadow max-w-xs">
+                    <div 
+                        key={index} 
+                        className="bg-white p-6 rounded-xl shadow max-w-xs cursor-pointer 
+                                   transition-all duration-300 ease-out 
+                                   hover:shadow-2xl hover:-translate-y-2"
+                    >
                         
                         {/* Profile */}
                         <div className="flex items-center gap-3">
@@ -53,7 +58,7 @@ export const Testimonial = () => {
                         {/* Static 5 stars */}
                         <div className="flex items-center gap-1 mt-4">
                             {Array(5).fill(0).map((_, index) => (
-                                <span key={index}>⭐</span>
+                                <span key={index}><img src={assets.star_icon}></img></span>
                             ))}
                         </div>
 
