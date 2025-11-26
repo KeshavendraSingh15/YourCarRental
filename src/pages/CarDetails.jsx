@@ -14,6 +14,7 @@ export const CarDetails = () => {
   }
 
   useEffect(() => {
+    
     setCar(dummyCarData.find(car => car._id === id))
   }, [id])
 
