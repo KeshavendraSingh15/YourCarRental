@@ -50,7 +50,7 @@ const Navbar = ({ setShowLogin }) => {
                 {/* Dashboard Button */}
                 <button
                     className="px-5 py-2 rounded-full bg-gray-900 text-white font-semibold 
-                               hover:bg-black transition-all shadow-sm"
+                               hover:bg-black transition-all shadow-sm" onClick={navigate('owner')}
                 >
                     Dashboard
                 </button>
